@@ -1,0 +1,103 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 10px 20px rgba(16, 24, 40, 0.08);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+.field {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.field span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+textarea {
+  width: 100%;
+  min-height: 220px;
+  border: 1px solid #d8dfeb;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+input[type='file'] {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background: #2563eb;
+}
+
+.x-button {
+  background: #111827;
+}
+
+.diary-card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background-color: #eef2ff;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #dbe3f3;
+}
+
+.diary-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.diary-card p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 1.4rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.75;
+}
+
+@media (max-width: 850px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
