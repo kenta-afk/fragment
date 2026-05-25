@@ -1,14 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #f4f6fb;
-  color: #1f2430;
-}
-
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -23,6 +12,11 @@ body {
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 10px 20px rgba(16, 24, 40, 0.08);
+}
+
+h1,
+h2 {
+  margin-top: 0;
 }
 
 .field {
@@ -48,7 +42,7 @@ textarea {
   resize: vertical;
 }
 
-input[type="file"] {
+input[type='file'] {
   width: 100%;
 }
 
@@ -69,7 +63,7 @@ button {
   background: #2563eb;
 }
 
-button#post-button {
+.x-button {
   background: #111827;
 }
 
@@ -86,13 +80,13 @@ button#post-button {
 }
 
 .diary-card::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.55);
 }
 
-#diary-preview-text {
+.diary-card p {
   position: relative;
   z-index: 1;
   margin: 0;
