@@ -1,4 +1,5 @@
 # fragment diary app
+[Link for application](https://fragment.dd4617706.workers.dev)
 
 React (CSR) + Vite + Bun で構成した日記アプリです。
 
