@@ -17,10 +17,7 @@ export function DiaryList({ previewText, wallpaperDataUrl }: DiaryListProps) {
         <p>保存するとこの見た目をベースに 1080px の画像を生成します。</p>
       </div>
 
-      <article
-        className="diary-card"
-        style={backgroundStyle}
-      >
+      <article className="diary-card" style={backgroundStyle}>
         <p>{previewText}</p>
       </article>
     </section>
