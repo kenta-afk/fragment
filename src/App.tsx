@@ -17,7 +17,9 @@ function App() {
     [diaryText],
   );
 
-  const handleWallpaperChange = (event: ChangeEvent<HTMLInputElement>): void => {
+  const handleWallpaperChange = (
+    event: ChangeEvent<HTMLInputElement>,
+  ): void => {
     const [file] = event.target.files || [];
     if (!file) {
       setWallpaperDataUrl("");
@@ -53,7 +55,10 @@ function App() {
           onSaveScreenshot={handleSaveScreenshot}
           onPostX={handlePostX}
         />
-        <DiaryList previewText={previewText} wallpaperDataUrl={wallpaperDataUrl} />
+        <DiaryList
+          previewText={previewText}
+          wallpaperDataUrl={wallpaperDataUrl}
+        />
       </section>
     </main>
   );
